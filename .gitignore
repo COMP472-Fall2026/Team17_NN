@@ -1,0 +1,36 @@
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Kaggle datasets
+data/*.csv
+
+# Generated Kaggle submissions
+submissions/*.csv
+
+# Generated experiment results
+results/**/*.csv
+results/**/*.png
+results/**/*.jpg
+results/**/*.pdf
+
+# Trained model weights
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# IDE
+.vscode/
+.idea/
+
+# Operating systems
+.DS_Store
+Thumbs.db
