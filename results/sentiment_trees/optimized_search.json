@@ -1,0 +1,19 @@
+[
+  {
+    "name": "rf_48_leaf20",
+    "n_estimators": 48,
+    "max_depth": 12,
+    "min_samples_leaf": 20,
+    "max_features": "sqrt",
+    "max_bins": 24,
+    "max_samples": 0.7,
+    "seed": 42,
+    "training_samples": 9600,
+    "validation_samples": 2400,
+    "validation_accuracy": 0.5904166666666667,
+    "validation_macro_f1": 0.5877466666666665,
+    "training_accuracy": 0.8580208333333333,
+    "elapsed_seconds": 25.74,
+    "status": "completed"
+  }
+]
