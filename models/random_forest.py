@@ -1,4 +1,3 @@
-
 import numpy as np
 
 from models.decision_tree import DecisionTree
@@ -61,15 +60,9 @@ class RandomForest:
         if not hasattr(self, "trees_"):
             raise RuntimeError("Call fit() before predict()")
 
-        votes = np.stack(
-            [tree.predict(X) for tree in self.trees_],
-            axis=0
-        )
+        votes = np.stack([tree.predict(X) for tree in self.trees_], axis=0)
 
-        vote_counts = np.zeros(
-            (votes.shape[1], len(self.classes_)),
-            dtype=np.int32
-        )
+        vote_counts = np.zeros((votes.shape[1], len(self.classes_)), dtype=np.int32)
 
         for j, label in enumerate(self.classes_):
             vote_counts[:, j] = (votes == label).sum(axis=0)

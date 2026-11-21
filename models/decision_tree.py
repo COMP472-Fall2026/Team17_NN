@@ -1,4 +1,3 @@
-
 from dataclasses import dataclass
 import numpy as np
 
@@ -103,22 +102,19 @@ class DecisionTree:
             thresholds = np.unique(candidates[:, j])
 
             # Group samples into bins for each candidate threshold
-            bins = np.searchsorted(
-                thresholds, X[:, feature], side="left"
-            )
+            bins = np.searchsorted(thresholds, X[:, feature], side="left")
 
             hist = np.bincount(
                 bins * self.n_classes_ + y,
-                minlength=(len(thresholds) + 1) * self.n_classes_
+                minlength=(len(thresholds) + 1) * self.n_classes_,
             ).reshape(-1, self.n_classes_)
 
             left_counts = np.cumsum(hist, axis=0)[:-1]
             left_n = left_counts.sum(axis=1)
             right_n = n - left_n
 
-            valid = (
-                (left_n >= self.min_samples_leaf)
-                & (right_n >= self.min_samples_leaf)
+            valid = (left_n >= self.min_samples_leaf) & (
+                right_n >= self.min_samples_leaf
             )
 
             if not valid.any():
