@@ -1,4 +1,3 @@
-
 import numpy as np
 
 from sklearn.metrics import (
@@ -27,33 +26,20 @@ def evaluate(y_true, y_pred):
 
     return {
         "accuracy": accuracy_score(y_true, y_pred),
-        "macro_f1": f1_score(
-            y_true,
-            y_pred,
-            average="macro",
-            zero_division=0
-        ),
+        "macro_f1": f1_score(y_true, y_pred, average="macro", zero_division=0),
     }
 
 
 def print_report(y_true, y_pred):
     """Print precision, recall and F1-score for each class."""
 
-    print(classification_report(
-        y_true,
-        y_pred,
-        zero_division=0
-    ))
+    print(classification_report(y_true, y_pred, zero_division=0))
 
 
 def get_confusion_matrix(y_true, y_pred, labels=None):
     """Return the confusion matrix."""
 
-    return confusion_matrix(
-        y_true,
-        y_pred,
-        labels=labels
-    )
+    return confusion_matrix(y_true, y_pred, labels=labels)
 
 
 def evaluate_model(model, X_train, y_train, X_val, y_val):

@@ -1,4 +1,3 @@
-
 from pathlib import Path
 
 import numpy as np
@@ -32,11 +31,7 @@ def load_split(task: str, val_size=0.2, random_state=SEED):
     X, y = load_train(task)
 
     return train_test_split(
-        X,
-        y,
-        test_size=val_size,
-        random_state=random_state,
-        stratify=y
+        X, y, test_size=val_size, random_state=random_state, stratify=y
     )
 
 
