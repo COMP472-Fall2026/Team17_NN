@@ -1,0 +1,232 @@
+[
+  {
+    "accuracy": 0.46416666666666667,
+    "macro_f1": 0.46220333333333335,
+    "classes": [
+      0,
+      1,
+      2
+    ],
+    "confusion_matrix": [
+      [
+        442,
+        206,
+        152
+      ],
+      [
+        281,
+        295,
+        224
+      ],
+      [
+        182,
+        241,
+        377
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.4884,
+        "recall": 0.5525,
+        "f1": 0.51848,
+        "support": 800
+      },
+      "1": {
+        "precision": 0.39757,
+        "recall": 0.36875,
+        "f1": 0.38262,
+        "support": 800
+      },
+      "2": {
+        "precision": 0.50066,
+        "recall": 0.47125,
+        "f1": 0.48551,
+        "support": 800
+      }
+    },
+    "name": "tree_depth_8",
+    "train_accuracy": 0.61125,
+    "fit_seconds": 1.9,
+    "hyperparameters": {
+      "max_depth": 8,
+      "min_samples_split": 16,
+      "min_samples_leaf": 12,
+      "max_features": 64,
+      "criterion": "gini",
+      "max_bins": 32
+    }
+  },
+  {
+    "accuracy": 0.44416666666666665,
+    "macro_f1": 0.44470000000000004,
+    "classes": [
+      0,
+      1,
+      2
+    ],
+    "confusion_matrix": [
+      [
+        391,
+        251,
+        158
+      ],
+      [
+        229,
+        325,
+        246
+      ],
+      [
+        180,
+        270,
+        350
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.48875,
+        "recall": 0.48875,
+        "f1": 0.48875,
+        "support": 800
+      },
+      "1": {
+        "precision": 0.38416,
+        "recall": 0.40625,
+        "f1": 0.3949,
+        "support": 800
+      },
+      "2": {
+        "precision": 0.46419,
+        "recall": 0.4375,
+        "f1": 0.45045,
+        "support": 800
+      }
+    },
+    "name": "tree_depth_16",
+    "train_accuracy": 0.7789583333333333,
+    "fit_seconds": 4.34,
+    "hyperparameters": {
+      "max_depth": 16,
+      "min_samples_split": 16,
+      "min_samples_leaf": 8,
+      "max_features": 64,
+      "criterion": "gini",
+      "max_bins": 32
+    }
+  },
+  {
+    "accuracy": 0.55,
+    "macro_f1": 0.5467766666666667,
+    "classes": [
+      0,
+      1,
+      2
+    ],
+    "confusion_matrix": [
+      [
+        528,
+        165,
+        107
+      ],
+      [
+        228,
+        344,
+        228
+      ],
+      [
+        150,
+        202,
+        448
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.58278,
+        "recall": 0.66,
+        "f1": 0.61899,
+        "support": 800
+      },
+      "1": {
+        "precision": 0.48383,
+        "recall": 0.43,
+        "f1": 0.45533,
+        "support": 800
+      },
+      "2": {
+        "precision": 0.57216,
+        "recall": 0.56,
+        "f1": 0.56601,
+        "support": 800
+      }
+    },
+    "name": "forest_12",
+    "train_accuracy": 0.7372916666666667,
+    "fit_seconds": 4.31,
+    "hyperparameters": {
+      "n_estimators": 12,
+      "max_depth": 10,
+      "min_samples_split": 16,
+      "min_samples_leaf": 30,
+      "max_features": "sqrt",
+      "criterion": "gini",
+      "max_bins": 24
+    }
+  },
+  {
+    "accuracy": 0.5654166666666667,
+    "macro_f1": 0.56276,
+    "classes": [
+      0,
+      1,
+      2
+    ],
+    "confusion_matrix": [
+      [
+        530,
+        155,
+        115
+      ],
+      [
+        208,
+        363,
+        229
+      ],
+      [
+        141,
+        195,
+        464
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.60296,
+        "recall": 0.6625,
+        "f1": 0.63133,
+        "support": 800
+      },
+      "1": {
+        "precision": 0.50912,
+        "recall": 0.45375,
+        "f1": 0.47984,
+        "support": 800
+      },
+      "2": {
+        "precision": 0.57426,
+        "recall": 0.58,
+        "f1": 0.57711,
+        "support": 800
+      }
+    },
+    "name": "forest_24",
+    "train_accuracy": 0.8014583333333334,
+    "fit_seconds": 9.51,
+    "hyperparameters": {
+      "n_estimators": 24,
+      "max_depth": 12,
+      "min_samples_split": 16,
+      "min_samples_leaf": 25,
+      "max_features": "sqrt",
+      "criterion": "gini",
+      "max_bins": 24
+    }
+  }
+]
